@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc12f2e702dbda4f989e8f59eb2e054, type: 3}
+  m_Name: Kapur
+  m_EditorClassIdentifier: 
+  stoneImage: {fileID: 0}
+  stoneName: Kapur
+  stoneDescription: 
+  stoneSoundDescription: {fileID: 0}
+  namaBatu: 
+  deskripsiBatu: 
+  suaraPenjelasanBatu: {fileID: 0}
+  stonePrefabs: {fileID: 7466549731490740892, guid: 60c59ccc7cc244a4aae5a9562d2c33e9,
+    type: 3}
