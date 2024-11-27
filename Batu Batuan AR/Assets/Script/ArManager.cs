@@ -6,12 +6,13 @@ using TMPro;
 
 public class ArManager : MonoBehaviour
 {
+    
     [SerializeField] private StoneData[] stoneData;
     [SerializeField] private TextMeshProUGUI titleText;
-    [SerializeField] private TextMeshProUGUI descriptionText;
+    //[SerializeField] private TextMeshProUGUI descriptionText;
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private GameObject descriptionImage;
-    private AudioClip audioClip;
+    //[SerializeField] private GameObject descriptionImage;
+    [SerializeField] private AudioClip audioClip;
     private int StoneSelected;
     public int lenguageID;
     private bool isMusicPlaying = false; // Menandakan apakah musik sedang diputar
@@ -22,28 +23,21 @@ public class ArManager : MonoBehaviour
         // mengambil penyimpanan data
         StoneSelected = PlayerPrefs.GetInt("AR");
         lenguageID = PlayerPrefs.GetInt("LocaleKey");
-        if (lenguageID == 0)
-        {
-            DisplayDescriptionFoundationEN();
-        }
-        else
-        {
-            DisplayDescriptionFoundationID();
-        }
+        DisplayDescriptionFoundationID();
     }
 
     void DisplayDescriptionFoundationID() // fungsi menampilkan bahasa indonesia
     {
 
         titleText.text = stoneData[StoneSelected].namaBatu;
-        descriptionText.text = stoneData[StoneSelected].deskripsiBatu;
+        //descriptionText.text = stoneData[StoneSelected].deskripsiBatu;
         audioClip = stoneData[StoneSelected].suaraPenjelasanBatu;
     }
 
     void DisplayDescriptionFoundationEN() // fungsi menampilkan bahasa inggirs
     {
         titleText.text = stoneData[StoneSelected].stoneName;
-        descriptionText.text = stoneData[StoneSelected].stoneDescription;
+        //descriptionText.text = stoneData[StoneSelected].stoneDescription;
         audioClip = stoneData[StoneSelected].stoneSoundDescription;
     }
 
@@ -60,15 +54,15 @@ public class ArManager : MonoBehaviour
 
         isMusicPlaying = !isMusicPlaying; // Mengubah status pemutaran musik
     }
-    public void ToggleDescription() // fungsi untuk menampilkan deskripsi
-    {
-        if (descriptionImage.activeSelf) // Periksa apakah descriptionImage sedang aktif
-        {
-            descriptionImage.SetActive(false); // Jika aktif, nonaktifkan
-        }
-        else
-        {
-            descriptionImage.SetActive(true); // Jika tidak aktif, aktifkan
-        }
-    }
+    //public void ToggleDescription() // fungsi untuk menampilkan deskripsi
+    //{
+    //    if (descriptionImage.activeSelf) // Periksa apakah descriptionImage sedang aktif
+    //    {
+    //        descriptionImage.SetActive(false); // Jika aktif, nonaktifkan
+    //    }
+    //    else
+    //    {
+    //        descriptionImage.SetActive(true); // Jika tidak aktif, aktifkan
+    //    }
+    //}
 }

@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Geneiss
   m_EditorClassIdentifier: 
   stoneImage: {fileID: 0}
-  stoneName: Gneiss
+  stoneName: Batu Geneiss
   stoneDescription: 
-  stoneSoundDescription: {fileID: 0}
-  namaBatu: 
+  stoneSoundDescription: {fileID: 8300000, guid: f9dd626220c64a249b3ec8c3dfaf7165,
+    type: 3}
+  namaBatu: Batu Geneiss
   deskripsiBatu: 
-  suaraPenjelasanBatu: {fileID: 0}
+  suaraPenjelasanBatu: {fileID: 8300000, guid: f9dd626220c64a249b3ec8c3dfaf7165, type: 3}
   stonePrefabs: {fileID: 1545825255365509722, guid: 10bb5ba497b2bcc40b05514ef38c6cb4,
     type: 3}

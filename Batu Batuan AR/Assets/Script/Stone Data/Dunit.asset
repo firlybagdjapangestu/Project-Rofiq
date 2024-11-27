@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Dunit
   m_EditorClassIdentifier: 
   stoneImage: {fileID: 0}
-  stoneName: Dunit
+  stoneName: Batu Dunit
   stoneDescription: 
-  stoneSoundDescription: {fileID: 0}
-  namaBatu: 
+  stoneSoundDescription: {fileID: 8300000, guid: b5ea62e3eb6fa4b4a82e0ed9c8b9638a,
+    type: 3}
+  namaBatu: Batu Dunit
   deskripsiBatu: 
-  suaraPenjelasanBatu: {fileID: 0}
+  suaraPenjelasanBatu: {fileID: 8300000, guid: b5ea62e3eb6fa4b4a82e0ed9c8b9638a, type: 3}
   stonePrefabs: {fileID: 3574665203805037795, guid: d718509c6341e854c9e373c1af8e9d2b,
     type: 3}
